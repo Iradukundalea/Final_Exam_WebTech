@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+<link rel="stylesheet" th:href="@{/css/login.css}" />
+    <title>bookstore</title>
+  </head>
+  <body>
+    <div class="bookForm">
+    <h1 class="header">Dashboard of Books</h1>
+    <form action="/save" method="post">
+    
+      <input class="in"  type="text"  required name="id"  placeholder="Enter Id"/><br /><br />
+
+     
+      <input class="in" type="text" required name="name"   placeholder="Enter BookName"/><br /><br />
+
+    
+      <input class="in" type="text"  required name="author"    placeholder="Enter Author" /><br /><br />
+
+    
+      <input class="in" type="text" required name="place"   placeholder="Enter place of publication"/><br /><br />
+
+      
+      <input class="in" type="text" required name="title"  placeholder="Enter Book title" /><br /><br />
+
+    
+     
+
+   
+      <input class="in" type="text" required name="pub"  placeholder="Enter publisher" /><br /><br />
+
+      
+      <input class="in" type="text" name="des" required  placeholder="Enter Description" /><br /><br />
+
+     
+      
+
+      <input  class="bu"type="submit" value="Submit" />
+    </form>
+  </div>
+  </body>
+</html>

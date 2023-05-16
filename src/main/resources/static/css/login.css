@@ -1,0 +1,70 @@
+.wrapper{
+    margin-left: 300px;
+    background: white;
+    width: 353px;
+    height: 400px;
+    margin-top: 90px;
+   
+}
+body{
+background-color:#93969b;
+
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    margin-left: 45px;
+    border-radius: 20px;
+}
+
+.button{
+    margin-left: 50px;
+    padding-top: 35px;
+    height: 100px;
+}
+.reset{
+    padding-top: 25px;
+    margin-left: 30px;
+}
+.r{
+    margin-left: 40px;
+    color: black;
+}
+.header{
+    margin-left: 120px;
+    padding-top: 30px;
+    
+}
+.bu{
+    width: 150px;
+    height: 40px;
+    margin-left: 45px;
+   background: black;
+   color: white;
+   border-radius: 100px;
+}
+.bookForm{
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    margin-left: 80px;
+}
+.in{
+ width: 250px;
+ height: 40px;
+ border-radius: 20px;
+ margin-right: 40px;
+
+
+}
+.sbu{
+    width: 150px;
+    height: 40px;
+    margin-left: 100px;
+    background: black;
+    color: white;
+    border-radius: 100px;
+  
+     
+}

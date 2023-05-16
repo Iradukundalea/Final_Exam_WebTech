@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SignUp Form</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="header">Sign Up</h1>
+      <!--    <p>Welcome back you've <br> been missed!</p>-->
+      <form
+        action="#"
+        th:action="@{/admins/save}"
+        th:object="${admin}"
+        method="post"
+      >
+        <input type="text" required placeholder="Enter fullname" /></br></br>
+
+        <input type="hidden" th:field="*{id}" />
+        <input type="text" required th:field="*{email}" placeholder="email" /></br></br>
+        <input type="password" required th:field="*{password}" placeholder="password" /></br></br>
+        
+        <!--        <closeform></closeform>-->
+        <button class="sbu" type="submit">Sign Up</button></br></br>
+      </form>
+
+
+     <div class="not-member">Aready have an account? <a class="r" th:href="@{/admins/login}">Login Now</a></div>
+    </div>
+  </body>
+</html>

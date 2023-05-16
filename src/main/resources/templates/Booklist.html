@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" th:href="@{/css/booklist.css}" />
+
+    <title>Title</title>
+  </head>
+
+  <body>
+    <th>
+        <h1 class="headi"><center>Welcome to our Bookstore List</center></h1>
+      </th>
+    <a class="add" th:href="@{/bookform}"><center> Add New Book </center></a>
+   
+  <div class="input-group">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+
+
+    <table>
+      
+      <tr style="height: 100px">
+        <th>Id</th>
+        <th>book name</th>
+        <th>Author</th>
+        <th>Description</th>
+        <th>Place</th>
+        <th>Publisher</th>
+        <th>Title</th>
+      </tr>
+      <td>
+        <tr style="height: 40px" th:each="b :${theBooks}">
+          <td th:text="${b.id}"></td>
+          <td th:text="${b.name}"></td>
+          <td th:text="${b.author}"></td>
+          <td th:text="${b.description}"></td>
+          <td th:text="${b.place}"></td>
+          <td th:text="${b.publisher}"></td>
+          <td th:text="${b.title}"></td>
+
+          <td>
+            <div class="but">
+              <a class="but" th:href="@{'/getform?bookId='+${b.id}}">Update</a>
+
+              <a
+                class="button"
+                th:href="@{'/deletebook?bookId='+${b.id}}"
+                onclick="if (!(confirm(are you sure you want delete this book))) return false"
+                >Delete</a
+              >
+            </div>
+          </td>
+        </tr>
+      </td>
+    </table>
+    <div class="ddd"></div>
+  </body>
+</html>

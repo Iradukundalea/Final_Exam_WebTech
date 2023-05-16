@@ -1,0 +1,33 @@
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    
+}
+table{
+    width: 90%;
+    margin-top: 100px;
+    
+}
+.but{
+ 
+ text-decoration: none;
+
+
+}
+
+body{
+    background-color:RGB(147 150 155);
+    color:black;
+ font-size: large;
+}
+.form-control{
+    height: 30px;
+    margin-left: 250px;
+    width: 250px;
+}
+.btn{
+    height: 30px;
+    margin-right: 10px;
+}
+
+

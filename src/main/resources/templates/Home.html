@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bitter:400,700"
+    />
+    <link rel="stylesheet" th:href="@{/css/Home.css}" />
+  </head>
+
+  <body>
+    <div>
+      <div class="header-dark">
+        <nav
+          class="navbar navbar-dark navbar-expand-md navigation-clean-search"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#">Book Store</a
+            ><button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#navcol-1"
+            >
+              <span class="sr-only">Toggle navigation</span
+              ><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li>
+                     <a class="nav-link" href="#">Contact Us</a>
+
+                </li>
+              </ul>
+              <form class="form-inline mr-auto" target="_self">
+                <div class="form-group">
+                  <label for="search-field"><i class="fa fa-search"></i></label
+                  ><input
+                    class="form-control search-field"
+                    type="search"
+                    name="search"
+                    id="search-field"
+                  />
+                </div>
+              </form>
+              <span class="navbar-text"
+                ><a th:href="@{'/admins/login'}" class="login">Log In</a></span
+              ><a class="btn btn-light action-button" role="button" th:href="@{'/admins/SignUp'}"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+       </div>
+
+       <div class="divpar">
+        <center>
+          <h1>Welcome!</h1>
+          <i><h3>Bookstore Management System <h3></i>
+         <h5 class="para"> A Bookstore management system is software program designed to</br> manage the all operations of bookstore, inluding managing inventory </br>and employees</p>
+        </center>
+       </div>
+
+     <div class="container mt-2">
+  <div class="row">
+    <div class="col-md-3 col-sm-6">
+      <div class="card card-block">
+    <img  src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+        <h5 class="card-title mt-3 mb-3">Mathematics book</h5>
+        <p class="card-text"> The book is usually structured to help students understand the different branches of mathematics.</p> 
+  </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card card-block">
+    <img src="https://static.pexels.com/photos/7357/startup-photos.jpg" alt="Photo of sunset">
+        <h5 class="card-title  mt-3 mb-3">Language book</h5>
+        <p class="card-text">The book is usually structured to help students to know diffrent languages .</p> 
+  </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card card-block">
+    <img src="https://static.pexels.com/photos/262550/pexels-photo-262550.jpeg" alt="Photo of sunset">
+        <h5 class="card-title  mt-3 mb-3">Programing book</h5>
+        <p class="card-text">The book is helping students understand the different branches of programing.</p> 
+  </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <div class="card card-block">
+    <img src="https://static.pexels.com/photos/326424/pexels-photo-326424.jpeg" alt="Photo of sunset">
+        <h5 class="card-title  mt-3 mb-3">stories book</h5>
+        <p class="card-text">The book is usually structured to help students to refresh minds.</p> 
+  </div>
+    </div>    
+  </div>
+  
+</div>
+ <!-- Footer -->
+<footer class=" text-center text-white mt-5 footer">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    
+
+   
+   
+    <section class="">
+    
+      <div class="row">
+     
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">bookstore</a>
+            </li>
+           
+          </ul>
+        </div>
+      
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Contact us</a>
+            </li>
+            
+          </ul>
+        </div>
+       
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+         
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white"> About us</a>
+            </li>
+            
+    
+          </ul>
+        </div>
+       
+      </div>
+      
+    </section>
+  
+  </div>
+  
+  <div class="text-center p-3">
+    © 2023 Copyright:
+    <a class="text-white" href="#">bookstore.com</a>
+  </div>
+
+</footer>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
